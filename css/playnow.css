@@ -1,0 +1,181 @@
+@charset "utf-8";
+#wrap {
+    background: none;
+}
+
+/* contents */
+#contents {
+    padding:20% 10%;
+    margin-bottom: 64px;
+}
+/* 바 배경 */
+.barbg {
+    height: 40px;
+}
+/* 배경 동영상 */
+#contents .way {
+    width: 100%;
+    height: 100%;
+}
+#contents .way video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    margin: 0;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+/* 영상 컨트롤러 */
+.video_ctrl {
+    width: 150px;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 20px;
+    position: fixed;
+    top: 72px;
+    right: 0;
+    z-index: 2;
+}
+.video_ctrl button {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.video_ctrl button::after {
+    content: "/";
+    display: inline-block;
+    padding-left: 8px;
+}
+
+.video_ctrl button:last-child::after {
+    display: none;
+}
+.video_ctrl .soundBtn {
+    margin-right: 0;
+}
+.video_ctrl .soundBtn>img {
+    width: 14px;
+    height: 14px;
+}
+.video_ctrl .soundBtn>img {
+    display: none;
+}
+/* PlayNow Btn */
+.playnow {
+    width: 116px;
+    height: 40px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 2;
+}
+
+.playnow button {
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.02rem;
+    color: #fff;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.airplane {
+    width: 100px;
+    height: 40px;
+    position: fixed;
+    top: 72px;
+    left: 1%;
+    z-index: 2;
+    animation: airplane 8s infinite;
+}
+.airplane i {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #f2aa00;
+}
+.airplane i {
+    animation: rotate 8s infinite;
+    transform-origin: center;
+}
+
+@keyframes airplane {
+    0% { left: 30%; }
+    48% { left: 60%;}
+    50% { left: 60%;}
+    95% { left: 30%; }
+    100% { left: 30%; }
+}
+@keyframes rotate {
+    0% { transform: scaleX(1); }
+    45% { transform: scaleX(1); }
+    50% { transform: scaleX(-1); }
+    95% { transform: scaleX(-1); }
+    100% { transform: scaleX(1); }
+}
+
+
+
+/* 플랫폼 Section */
+#contents .platforms {
+    font-family: 'Lato',sans-serif;
+    font-size: 0.867rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    padding: 36px 24px;
+    background: url(../images/플레이배경.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 3;
+}
+
+#contents .platforms .fa-times-circle{
+    position: absolute;
+    top: 30px;
+    right: 24px;
+    font-size: 1.5rem;
+    font-weight: 200; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+#contents .platforms .fa-times-circle:hover{
+    color: #f2aa00;
+}
+#contents .platforms h3 {
+    width: 80%;
+    margin: 20px auto;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: -0.1px;
+}
+#contents .platforms ul li {
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    border: 1px solid #fff;
+    line-height: 48px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#contents .platforms ul li:hover {
+    background-color: #f2aa00;
+    color: #000;
+    border: 1px solid #f2aa00;
+}
+#contents .platforms ul li>i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}

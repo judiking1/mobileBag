@@ -1,0 +1,428 @@
+@charset "utf-8";
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+#wrap {
+    width: 100%;
+    /* border: 8px solid #fff; */
+    background: none;
+}
+/* curtain */
+.curtain {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
+    display: none;
+    z-index: 999999;
+}
+
+/* alert */
+.alert {
+    width: 200px;
+    height: 50px;
+    background-color: #f2aa00;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 18px;
+    border-radius: 5px;
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99999999;
+}
+#topButton {
+    position: fixed;
+    bottom: 3vh;
+    right: 5%;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(../images/탑글라이더.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: #000;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    z-index: 300;
+    transition: all 0.3s;
+}
+
+/* 바 배경 */
+.barbg {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: #222;
+    opacity: 0.5;
+    z-index: 1;
+}
+/* Header */
+.header {
+    padding: 24px;
+}
+
+/* 배경영상 */
+.ailee {
+    width: 100%;
+    height: 100%;
+}
+.ailee video {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    object-fit: fill;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.ailee video source {
+    width: 100%;
+    height: 100%;
+}
+
+/* 영상 컨트롤러 */
+.ailee .video_ctrl {
+    width: 150px;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 20px;
+    position: fixed;
+    top: 72px;
+    right: 0;
+    z-index: 2;
+}
+.ailee .video_ctrl button {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.ailee .video_ctrl button::after {
+    content: "/";
+    display: inline-block;
+    padding-left: 8px;
+}
+.ailee .video_ctrl button:last-child::after {
+    display: none;
+}
+.ailee .video_ctrl .soundBtn {
+    margin-right: 0;
+}
+.ailee .video_ctrl .soundBtn>img {
+    width: 14px;
+    height: 14px;
+}
+.ailee .video_ctrl .soundBtn>img {
+    display: none;
+}
+
+
+/* 춤 */
+.dance {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 110;
+}
+.dance img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================================================
+    모바일 햄버거 메뉴 효과
+======================================================== */
+/* A. 햄버거 메뉴 그리기 */
+input[id="menuicon"] {
+    display: none;
+}
+input[id="menuicon"]+label {
+    display: block;
+    width: 24px;
+    height: 14px;
+    cursor: pointer;
+    /* 포지션 위치기준값 */
+    position: fixed;
+    z-index: 110;
+}
+input[id="menuicon"]+label span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    /* 포지션 */
+    position: absolute;
+    z-index: 110;
+    transition: all 0.3s;
+}
+input[id="menuicon"]+label span:nth-child(1) {
+    top: 0;
+}
+input[id="menuicon"]+label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+input[id="menuicon"]+label span:nth-child(3) {
+    bottom: 0;
+}
+
+/* B. 클릭시 X버튼 만들기 */
+/* input을 클릭하면 첫번째 햄버거의 위치를 50%로 이동시키고 45도 회전시키세요 */
+input[id="menuicon"]:checked +label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked +label span:nth-child(2) {
+    opacity: 0;
+}
+input[id="menuicon"]:checked +label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+/* C. GNB 메뉴 슬라이딩 효과 */
+.header nav[class="mobile_gnb"] {
+    width: 250px;
+    height: 100%;
+    background: #222;
+    /* 포지션 */
+    position: fixed;
+    left: -258px;
+    top: 0;
+    z-index: 90;
+    transition: all 0.3s;
+}
+input[id="menuicon"]:checked + label + nav {
+    left: 0;
+}
+
+
+/* 햄버거 클릭시 보이는 GNB메뉴 */
+.header .mobile_gnb {
+    padding: 60px 0 0 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+}
+.header .mobile_gnb .gnb>li {
+    height: 42px;
+    line-height: 42px;
+    padding-left: 24px;
+}
+.header .mobile_gnb .gnb>li:hover {
+    background: #fff;
+}
+.header .mobile_gnb .gnb>li>a {
+    display: block;
+    color: #fff;
+}
+.header .mobile_gnb .gnb>li>a:hover {
+    color: #000;
+    font-weight: 700;
+}
+
+/* 추가 코딩 */
+/* .header .mobile_gnb .gnb>li:last-child:hover {
+    background: none;
+    cursor: default;
+}
+.header .mobile_gnb .gnb>li:last-child>a:hover {
+    color: #fff;
+    font-weight: 400;
+    cursor: default;
+} */
+
+/* SNS */
+.header .mobile_gnb .sns {
+    width: 234px;
+    height: 60px;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-left: 24px;
+    margin-top: 12px;
+}
+.header .mobile_gnb .sns li {
+    width: 32px;
+    margin-right: 10px;
+}
+.header .mobile_gnb .sns li a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 7px;
+}
+.header .mobile_gnb .sns i {
+    font-size: 1.2rem;
+    line-height: 18px;
+    color: #fff;
+}
+.sns .facebook {background-color: #007aff;}
+.sns .facebook:hover {background-color: #fff;}
+.sns .facebook:hover .fa-facebook { color: #007aff;}
+
+.sns .youtube {background-color: red;}
+.sns .youtube:hover {background-color: #fff;}
+.sns .youtube:hover .fa-youtube{color: red;}
+
+.sns .tiktok {background-color: #FE2C55;}
+.sns .tiktok:hover {background-color: #fff;}
+.sns .tiktok:hover .fa-tiktok{color: #FE2C55;}
+
+.sns .insta {
+    background: radial-gradient(circle farthest-corner at 32% 106%,#ffe17d 0%,#ffcd69 10%,#fa9137 28%,#eb4141 42%,transparent 82%) , linear-gradient(135deg,#234bd7 12%,#c33cbe 58%);
+}
+.sns .insta:hover {
+    background: none;
+    background-color: #fff;
+}
+.sns .insta:hover .fa-instagram {color: rgb(240, 114, 114);}
+
+/* Contents */
+#contents {
+    width: 100%;
+}
+
+/* 헤더 로고 */
+.logo {
+    width: 100%;
+    height: 60px;
+    background: #222;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.logo img {
+    width: 100px;
+    height: 32px;
+    margin-top: 14px;
+    z-index: 100;
+}
+
+
+/* 컨텐츠 */
+#contents .text {
+    width: 90%;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Roboto",sans-serif;
+    text-shadow: #222 1px 0 10px;
+    line-height: 100%;
+    letter-spacing: -.018em;
+    text-align: center;
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 65%;
+    z-index: 2;
+}
+#contents .text h2 {
+    font-family: 'MyLotteBold';
+    font-size: 1.5rem;
+    margin-bottom: 10px; 
+    line-height: 32px;
+}
+#contents .text h3 {
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+#contents .text h4 button{
+    margin-top: 40px;
+    width: 250px;
+    height: 40px;
+    background: #f2aa00;
+    border: none;
+    outline: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #222;
+    cursor: pointer;
+}
+#contents .text h4 a:hover button {
+    background: #ff9006;
+}
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background: #000;
+    padding-top: 30px;
+    text-align: center;
+    z-index: 1;
+}
+footer>p {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 200px;
+    height: 45px;
+}
+footer>p img {
+    width: 100%;
+    height: 100%;
+}
+footer .copyright {
+    padding-bottom: 24px;
+}
+footer .copyright .legal {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+footer .copyright .legal li {
+    color: #4c4c4c;
+    font-size: 0.75rem;
+    padding: 0 10px;
+    border-right: 1px solid #4c4c4c;
+}
+footer .copyright .legal li:hover {
+    color: #f2aa00;
+}
+footer .copyright .legal li:last-child {
+    border-right: none;
+}
+
+footer .copyright p {
+    color: #4c4c4c;
+    font-size: 0.75rem;
+    margin-bottom: 40px;
+}
+
+

@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+#wrap {
+    background: url('../images/인포배경.jpg') no-repeat top rgba(0, 0, 0, 0.8);
+    /* background-blend-mode: multiply; */
+    background-size: 100% 100%;
+    
+}
+#contents {
+    padding: 0;
+    margin-bottom: 0;
+}
+.complete {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 140px;
+    left: 0;
+}
+.complete img {
+    width: 100%;
+    height: 100%;
+}
+.training {
+    padding: 5%;
+    margin-bottom: 40px;
+}
+.training h3 {
+    font-family: 'MyLotteBold';
+    font-size: 32px;
+    font-weight: 900;
+    color: #000;
+    line-height: 120%;
+    text-align: center;
+    text-shadow: none;
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+.training p {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 24px;
+}
+.modes h3 {
+    font-family: 'MyLotteBold';
+    font-size: 32px;
+    font-weight: 900;
+    color: #000;
+    line-height: 120%;
+    text-align: center;
+    text-shadow: none;
+    margin-bottom: 32px;
+}
+.modes_info img {
+    width: 100%;
+}
+/* 스와이퍼 */
+#contents .modes {
+    width: 100%;
+    padding-bottom: 40px;
+}
+.swiper-container{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.swiper-container [class^="swiper-button-"]{
+    top: initial;
+    bottom: 0;
+}
+.swiper-container .swiper-pagination-bullet{
+    width: 20px;
+    height: 4px;
+    border-radius: initial;
+    transition: all 0.3s;
+}
+.swiper-container .swiper-pagination-bullet-active {
+    height: 8px;
+}
+/* C-1. 스와이퍼 될 Slider 각각 내용들 */
+.slide {
+    width: 100%;
+    height: 100%;
+    background: none;
+    line-height: 1.1;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.modes_info {
+    width:60%;
+    height: 100%;
+}
+.modes_info h3 {
+    color: #fff;
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.modes_info p {
+    font-size: 13px;
+    line-height: 1.1;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3; 
+}

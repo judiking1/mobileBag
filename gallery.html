@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="wonbae">
+    <meta name="description" content="배틀그라운드">
+    <title>PUBG BATTLEGROUNDS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="./images/p32.ico">
+    <link rel="apple-touch-icon=precomposed" href="./images/pav180.jpg">
+    <!-- 기본코딩 CSS 파일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <!-- 스와이퍼 CSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <!-- audio CSS -->
+    <link rel="stylesheet" href="./css/audioplayer.css">
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+</head>
+<body>
+    <div class="curtain"></div>
+    <button id="topButton"></button>
+    <!-- Dance -->
+    <figure class="dance">
+        <img src="./images/춤3.gif" alt="춤">
+    </figure>
+    <!-- /Dance -->
+    <div id="wrap">
+        <!-- Header -->
+        <header class="header">
+            <!-- 햄버거 메뉴 그리기 -->
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- /햄버거 메뉴 그리기 -->
+            <!-- 햄버거 클릭시 보이는 GNB 메뉴 -->
+            <nav class="mobile_gnb">
+                <ul class="gnb">
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="./playnow.html">PLAY NOW</a></li>
+                    <li><a href="./info.html">INFO</a></li>
+                    <li><a href="./gallery.html">GALLERY</a></li>
+                    <li><a href="./shorts.html">SHORTS</a></li>
+                    <li><a href="#">SHARE</a></li>
+                </ul>
+                <ul class="sns">
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" class="insta"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+            </nav>
+            <!-- /햄버거 클릭시 보이는 GNB 메뉴 -->
+            <!-- 헤더 로고 -->
+            <div class="logo">
+                <a href="./home.html"><img src="./images/헤더로고.png" alt="로고"></a>
+            </div>
+            <!-- /헤더 로고 -->
+        </header>
+        <!-- /Header -->
+        <!-- Contents -->
+        <main role="main" id="contents">
+            <h1>GALLERY</h1>
+            <!-- 스와이퍼메뉴 -->
+            <nav class="menus">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide">
+                            <a href="#all" class="clicked"><div>전체</div></a>
+                            <a href="#sound"><div>사운드트랙</div></a>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <a href="#trailer"><div>트레일러</div></a>
+                            <a href="#keyart"><div>키아트</div></a>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <a href="#shot"><div>스크린샷</div></a>
+                            <a href="#etc"><div>기타</div></a>
+                        </div>
+                    </div>
+                    <!-- E. 스와이퍼 좌우 화살표 -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- /E. 스와이퍼 좌우 화살표 -->
+                </div>
+            </nav>
+            <!-- /스와이퍼메뉴 -->
+            <!-- Sound Section -->
+            <section class="sound" id="sound">
+                <figure>
+                    <img src="./images/사운드배경.png" alt="사운드배경">
+                    <audio src="./images/메인음악(ReadyToBattle).mp3" preload="auto" controls></audio>
+                    <h3>
+                        Ready To Battle(Early Access) <br>
+                        <button>사운드 트랙</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/사운드배경2.png" alt="사운드배경">
+                    <h3>
+                        Ready To Battle(Early Access) <br>
+                        <button>사운드 트랙</button>
+                    </h3>
+                    <a href="./images/메인음악(ReadyToBattle).mp3" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Sound Section -->
+            <!-- Youtube Section -->
+            <section class="trailer" id="trailer">
+                <figure>
+                    <video controls playsinline>
+                        <source src="./images/공식트레일러.mp4">
+                    </video>
+                    <h3>
+                        공식 트레일러<br>
+                        <button>트레일러</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <video autoplay muted controls playsinline>
+                        <source src="./images/공식트레일러.mp4">
+                    </video>
+                    <h3>
+                        공식 트레일러<br>
+                        <button>트레일러</button>
+                    </h3>
+                    <a href="./images/공식트레일러.mp4" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <video controls playsinline>
+                        <source src="./images/운수좋은날.mp4">
+                    </video>
+                    <h3>
+                        운수 좋은 날<br>
+                        <button>트레일러</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <video controls autoplay muted playsinline>
+                        <source src="./images/운수좋은날.mp4">
+                    </video>
+                    <h3>
+                        운수 좋은 날<br>
+                        <button>트레일러</button>
+                    </h3>
+                    <a href="./images/운수좋은날.mp4" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <video controls>
+                        <source src="./images/에란겔.mp4">
+                    </video>
+                    <h3>
+                        에란겔<br>
+                        <button>트레일러</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <video autoplay muted controls playsinline>
+                        <source src="./images/에란겔.mp4">
+                    </video>
+                    <h3>
+                        에란겔<br>
+                        <button>트레일러</button>
+                    </h3>
+                    <a href="./images/에란겔.mp4" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <video controls playsinline>
+                        <source src="./images/비켄디.mp4">
+                    </video>
+                    <h3>
+                        비켄디<br>
+                        <button>트레일러</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <video controls autoplay muted playsinline>
+                        <source src="./images/비켄디.mp4">
+                    </video>
+                    <h3>
+                        비켄디<br>
+                        <button>트레일러</button>
+                    </h3>
+                    <a href="./images/비켄디.mp4" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Youtube Section -->
+
+            <!-- Keyart Section -->
+            <section class="keyart" id="keyart">
+                <figure>
+                    <img src="./images/키아트2_블랙핑크.jpg" alt="키아트1">
+                    <h3>
+                        Season 13 Blackpink Collaboration Key Art<br>
+                        <button>키아트</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/키아트2_블랙핑크.jpg" alt="키아트1">
+                    <h3>
+                        Season 13 Blackpink Collaboration Key Art<br>
+                        <button>키아트</button>
+                    </h3>
+                    <a href="./images/키아트2_블랙핑크.jpg" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./images/키아트1_손흥민.jpg" alt="키아트2">
+                    <h3>
+                        Season 12 SON Collaboration Key Art<br>
+                        <button>키아트</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/키아트1_손흥민.jpg" alt="키아트2">
+                    <h3>
+                        Season 12 SON Collaboration Key Art<br>
+                        <button>키아트</button>
+                    </h3>
+                    <a href="./images/키아트1_손흥민.jpg" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./images/키아트3_시즌16.jpg" alt="키아트3">
+                    <h3>
+                        Season 16 Monster Chicken Royale Key Art<br>
+                        <button>키아트</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/키아트3_시즌16.jpg" alt="키아트3">
+                    <h3>
+                        Season 16 Monster Chicken Royale Key Art<br>
+                        <button>키아트</button>
+                    </h3>
+                    <a href="./images/키아트3_시즌16.jpg" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./images/키아트4_시즌15A.jpg" alt="키아트4">
+                    <h3>
+                        Season 15 Free to Play Key Art A<br>
+                        <button>키아트</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/키아트4_시즌15A.jpg" alt="키아트4">
+                    <h3>
+                        Season 15 Free to Play Key Art A<br>
+                        <button>키아트</button>
+                    </h3>
+                    <a href="./images/키아트4_시즌15A.jpg" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./images/키아트5_시즌15B.jpg" alt="키아트5">
+                    <h3>
+                        Season 15 Free to Play Key Art B<br>
+                        <button>키아트</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/키아트5_시즌15B.jpg" alt="키아트5">
+                    <h3>
+                        Season 15 Free to Play Key Art B<br>
+                        <button>키아트</button>
+                    </h3>
+                    <a href="./images/키아트5_시즌15B.jpg" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Keyart Section -->
+      
+            <!-- Screenshot Section -->
+            <section class="shot" id="shot">
+                <figure>
+                    <img src="./images/Erangel-A.jpg" alt="에란겔1">
+                    <h3>
+                        에란겔 A<br>
+                        <button>스크린샷</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/Erangel-A.jpg" alt="에란겔1">
+                    <h3>
+                        에란겔 A<br>
+                        <button>스크린샷</button>
+                    </h3>
+                    <a href="/images/Erangel-A.jpg" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./images/Erangel-B.jpg" alt="에란겔2">
+                    <h3>
+                        에란겔 B<br>
+                        <button>스크린샷</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/Erangel-B.jpg" alt="에란겔2">
+                    <h3>
+                        에란겔 B<br>
+                        <button>스크린샷</button>
+                    </h3>
+                    <a href="./images/Erangel-B.jpg" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./images/Karakin-A.jpg" alt="카라킨1">
+                    <h3>
+                        카라킨 A<br>
+                        <button>스크린샷</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/Karakin-A.jpg" alt="카라킨1">
+                    <h3>
+                        카라킨 A<br>
+                        <button>스크린샷</button>
+                    </h3>
+                    <a href="./images/Karakin-A.jpg" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./images/Karakin-B.jpg" alt="카라킨2">
+                    <h3>
+                        카라킨 B<br>
+                        <button>스크린샷</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/Karakin-B.jpg" alt="카라킨2">
+                    <h3>
+                        카라킨 B<br>
+                        <button>스크린샷</button>
+                    </h3>
+                    <a href="./images/Karakin-B.jpg" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./images/Vikendi-Reborn-A.jpg" alt="비켄디1">
+                    <h3>
+                        비켄디_Reborn A<br>
+                        <button>스크린샷</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/Vikendi-Reborn-A.jpg" alt="비켄디1">
+                    <h3>
+                        비켄디_Reborn A<br>
+                        <button>스크린샷</button>
+                    </h3>
+                    <a href="./images/Vikendi-Reborn-A.jpg" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./images/Vikendi-Reborn-B.jpg" alt="비켄디2">
+                    <h3>
+                        비켄디_Reborn B<br>
+                        <button>스크린샷</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/Vikendi-Reborn-B.jpg" alt="비켄디2">
+                    <h3>
+                        비켄디_Reborn B<br>
+                        <button>스크린샷</button>
+                    </h3>
+                    <a href="./images/Vikendi-Reborn-B.jpg" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Screenshot Section -->
+
+            <!-- Etc Section -->
+            <section class="etc" id="etc">
+                <figure>
+                    <img src="./images/기타1.png" alt="기타1">
+                    <h3>
+                        기타 1<br>
+                        <button>ETC</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/기타1.png" alt="기타1">
+                    <h3>
+                        기타 1<br>
+                        <button>ETC</button>
+                    </h3>
+                    <a href="./images/기타1.png" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./images/기타2.jpg" alt="기타2">
+                    <h3>
+                        기타 2<br>
+                        <button>ETC</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/기타2.jpg" alt="기타2">
+                    <h3>
+                        기타 2<br>
+                        <button>ETC</button>
+                    </h3>
+                    <a href="./images/기타2.jpg" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./images/기타3.png" alt="기타3">
+                    <h3>
+                        기타 3<br>
+                        <button>ETC</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/기타3.png" alt="기타3">
+                    <h3>
+                        기타 3<br>
+                        <button>ETC</button>
+                    </h3>
+                    <a href="./images/기타3.png" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./images/기타4.png" alt="기타4">
+                    <h3>
+                        기타 4<br>
+                        <button>ETC</button>
+                    </h3>
+                </figure>
+                <div class="download">
+                    <div class="close"><i class="fas fa-times fa-xs"></i></div>
+                    <img src="./images/기타4.png" alt="기타4">
+                    <h3>
+                        기타 4<br>
+                        <button>ETC</button>
+                    </h3>
+                    <a href="./images/기타4.png" download><button><i class="fas fa-download"></i>&nbsp;&nbsp;다운로드</button></a>
+                    <div class="download_nav">
+                        <div class="download_prev"><i class="fas fa-arrow-left"></i></div>
+                        <div class="download_next"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Etc Section -->
+        </main>
+        <!-- /Contents -->
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>
+            <img src="./images/푸터로고.png" alt="푸터로고">
+        </p>
+        <div class="copyright">
+            <ul class="legal">
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">운영정책</a></li>
+                <li><a href="#">쿠키설정</a></li>
+            </ul>
+            <p>
+                &copy; 
+                © 2023 KRAFTON, INC. PUBG IS A REGISTERED TRADEMARK OR SERVICE MARK OF KRAFTON, INC.              
+            </p>
+            <p>
+                <img src="./images/18세.svg" alt="18">
+            </p>
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+    <!-- 스와이퍼 플러그인 -->
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/swiperCustom.js"></script>
+    <!-- 페이지 플러그인 -->
+    <script src="./js/gallery.js"></script>
+    <script src="./js/audioplayer.js"></script>
+</body>
+</html>

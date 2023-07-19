@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="wonbae">
+    <meta name="description" content="배틀그라운드">
+    <title>PUBG BATTLEGROUNDS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="./images/p32.ico">
+    <link rel="apple-touch-icon=precomposed" href="./images/pav180.jpg">
+    <!-- 기본코딩 CSS 파일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/shorts.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 페이지 JS -->
+    <script src="./js/calHeight.js"></script>
+</head>
+<body>
+    <div class="curtain"></div>
+    <button id="topButton"></button>
+    <!-- Dance -->
+    <figure class="dance">
+        <img src="./images/움1.gif" alt="춤">
+    </figure>
+    <!-- /Dance -->
+    <div id="wrap">
+        <!-- Header -->
+        <header class="header">
+            <!-- 햄버거 메뉴 그리기 -->
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- /햄버거 메뉴 그리기 -->
+            <!-- 햄버거 클릭시 보이는 GNB 메뉴 -->
+            <nav class="mobile_gnb">
+                <ul class="gnb">
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="./playnow.html">PLAY NOW</a></li>
+                    <li><a href="./info.html">INFO</a></li>
+                    <li><a href="./gallery.html">GALLERY</a></li>
+                    <li><a href="./shorts.html">SHORTS</a></li>
+                    <li><a href="#">SHARE</a></li>
+                </ul>
+                <ul class="sns">
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" class="insta"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+            </nav>
+            <!-- /햄버거 클릭시 보이는 GNB 메뉴 -->
+            <!-- 헤더 로고 -->
+            <div class="logo">
+                <a href="./home.html"><img src="./images/헤더로고.png" alt="로고"></a>
+            </div>
+            <!-- /헤더 로고 -->
+        </header>
+        <!-- /Header -->
+        <!-- Contents -->
+        <main role="main" id="contents">
+           <!-- Youtube Section -->
+            <section class="shorts">
+                <h3>SHORTS</h3>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide2">
+                            <article>
+                                <video autoplay controls muted playsinline class="xia">
+                                    <source src="./images/김준수.mp4">
+                                </video>
+                            </article>
+                            <h3>하나의 빛이 되어 붉게 타올라 - xia</h3>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <article>
+                                <video controls muted playsinline class="xia">
+                                    <source src="./images/친구.mp4">
+                                </video>
+                            </article>
+                            <h3>친구야 이만하면 됐다...</h3>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <article>
+                                <video controls muted playsinline class="xia">
+                                    <source src="./images/에일리.mp4">
+                                </video>
+                            </article>
+                            <h3>배그 공식 파트너 에일리의 디자인 스킨</h3>
+                        </div>
+                    </div>
+                    <!-- D. 스와이퍼 넘버링 클래스 -->
+                    <div class="swiper-pagination"></div>
+                    <!-- E. 스와이퍼 좌우 화살표 -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- /E. 스와이퍼 좌우 화살표 -->
+                </div>
+           </section>
+           <!-- Youtube Section -->
+        </main>
+        <!-- /Contents -->
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>
+            <img src="./images/푸터로고.png" alt="푸터로고">
+        </p>
+        <div class="copyright">
+            <ul class="legal">
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">운영정책</a></li>
+                <li><a href="#">쿠키설정</a></li>
+            </ul>
+            <p>
+                &copy; 
+                © 2023 KRAFTON, INC. PUBG IS A REGISTERED TRADEMARK OR SERVICE MARK OF KRAFTON, INC.              
+            </p>
+            <p>
+                <img src="./images/18세.svg" alt="18">
+            </p>
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script src="./js/shorts.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/swiper_shorts.js"></script>
+</body>
+</html>
