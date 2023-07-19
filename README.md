@@ -23,7 +23,9 @@
   <br>
   1. https://judiking1.cafe24.com/bag/
   <br>
-  2. (휴대폰으로 확인 시) http://judiking1.cafe24.com/bag/home.html
+  2. https://judiking1.github.io/mobileBag/ (1번 링크 안될 시)
+  <br>
+  3. (휴대폰으로 확인 시) http://judiking1.cafe24.com/bag/home.html
 </p>
 
 ![image](https://github.com/judiking1/mobileBag/assets/110409369/2a04c9d9-4c75-49c5-95b8-0a672a3e998d)
