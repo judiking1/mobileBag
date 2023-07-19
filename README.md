@@ -12,16 +12,18 @@
   모바일 화면에 맞게 비율을 구현했으며,
   <br>
   모바일 목업이미지를 통해 PC로도 볼 수 있도록 구현했습니다.
+  <br>
+  갤러리의 미디어를 클릭 시, 다운로드 모달창을 볼 수 있습니다.
 </p>
 <br>
 <p>
   - 홈페이지 확인하기 :
   <br>
-  1. 
+  1. https://judiking1.cafe24.com/bag/
   <br>
-  2. (위 링크 실행 안될시) https://judiking1.cafe24.com/bag/
-  <br>
-  3. (휴대폰으로 확인 시) http://judiking1.cafe24.com/bag/home.html
+  2. (휴대폰으로 확인 시) http://judiking1.cafe24.com/bag/home.html
 </p>
 
 ![image](https://github.com/judiking1/mobileBag/assets/110409369/2a04c9d9-4c75-49c5-95b8-0a672a3e998d)
+
+![image](https://github.com/judiking1/mobileBag/assets/110409369/453e9001-ea33-4f2f-a6c6-41b0c40e8f9d)
