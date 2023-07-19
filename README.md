@@ -13,7 +13,9 @@
   <br>
   모바일 목업이미지를 통해 PC로도 볼 수 있도록 구현했습니다.
   <br>
-  갤러리의 미디어를 클릭 시, 다운로드 모달창을 볼 수 있습니다.
+  Home ~ Shorts 까지 5개의 페이지로 구성되어있으며,
+  <br>
+  갤러리의 미디어들은 클릭 시, 다운로드 모달창을 볼 수 있습니다.
 </p>
 <br>
 <p>
@@ -25,5 +27,8 @@
 </p>
 
 ![image](https://github.com/judiking1/mobileBag/assets/110409369/2a04c9d9-4c75-49c5-95b8-0a672a3e998d)
+
+![image](https://github.com/judiking1/mobileBag/assets/110409369/dc349394-fb92-48e8-a33a-0ff0a4ea380e)
+
 
 ![image](https://github.com/judiking1/mobileBag/assets/110409369/453e9001-ea33-4f2f-a6c6-41b0c40e8f9d)
